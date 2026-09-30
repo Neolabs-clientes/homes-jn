@@ -1,0 +1,9 @@
+# parciales del generador (no se publican; el fichero publicado es index.html)
+p1.html
+p2.html
+p3.html
+p4.html
+p5.html
+build_assets.py
+build_interiores.py
+build_og.py

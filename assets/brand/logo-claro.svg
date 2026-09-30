@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" width="320" height="64" role="img" aria-label="Homes JN">
+  <rect x="2" y="8" width="48" height="48" rx="11" fill="#FFFFFF" fill-opacity="0.10" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <rect x="10" y="21" width="7.5" height="22" rx="1.6" fill="#C08442"/>
+  <rect x="21.2" y="15" width="7.5" height="28" rx="1.6" fill="#E0A45E"/>
+  <rect x="32.4" y="21" width="7.5" height="22" rx="1.6" fill="#C08442"/>
+  <text x="62" y="38" font-family="Sora, Archivo, Arial, sans-serif" font-size="25" font-weight="700" letter-spacing="1.2" fill="#F7F5F1">HOMES <tspan fill="#E0A45E">JN</tspan></text>
+  <text x="63" y="54" font-family="Inter, Arial, sans-serif" font-size="9.6" font-weight="500" letter-spacing="3.5" fill="#C9C4BA">CASAS EXPANDIBLES</text>
+</svg>
