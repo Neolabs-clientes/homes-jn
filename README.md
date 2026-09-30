@@ -4,12 +4,21 @@ Demo de cliente hecha por NEO Labs a partir de las fotos, los vídeos y los dato
 aportados por el negocio (Homes JN, teléfono 615 69 11 17).
 
 - `index.html` — una sola página: hero, sistema expandible, distribución (plano SVG),
-  equipamiento, vídeo tour, galería, comparativa, usos, proceso, FAQ y contacto.
+  equipamiento, vídeo tour, galería, precio, comparativa, usos, proceso, FAQ y contacto.
 - `assets/fotos/` — fotos reales de la unidad (exterior e interior) en webp + jpg.
 - `assets/video/` — dos vídeos verticales reales (tour interior 71 s, exterior 40 s) + póster.
 - `assets/brand/` — logotipo vectorial y favicon.
 - `og.jpg` — imagen de compartición en WhatsApp y redes.
 - `aviso-legal.html`, `politica-privacidad.html`, `politica-cookies.html` — páginas legales.
+
+Precio de la vivienda: **15.900 €** (transporte y montaje no incluidos: se presupuestan
+según la ubicación de la parcela).
+
+Pendiente del titular: razón social, NIF y domicilio para las páginas legales.
+
+Los ficheros `p1.html` … `p5.html` y `build_*.py` son los trozos y scripts con los que se
+genera `index.html` (`cat p1.html p2.html p3.html p4.html p5.html > index.html`) y el
+`og.jpg`; no se publican (están en `.gitignore`).
 
 ## Cómo se regenera
 

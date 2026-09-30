@@ -187,6 +187,23 @@ section[id]{scroll-margin-top:86px}
   background:linear-gradient(180deg,rgba(10,12,15,0),rgba(10,12,15,.82))}
 .gal .ancha{grid-column:span 2;aspect-ratio:16/11}
 .gal .ancha img{object-position:50% 62%}
+/* ---------- precio ---------- */
+.hero-precio{display:flex;align-items:baseline;gap:.75rem;flex-wrap:wrap;margin:1.4rem 0 0}
+.hero-precio b{font-family:var(--disp);font-weight:700;font-size:clamp(1.6rem,3.2vw,2.2rem);letter-spacing:-.02em;color:var(--wood2)}
+.hero-precio span{font-size:.86rem;color:rgba(247,245,241,.75)}
+.hero .btn-ghost{background:rgba(10,12,15,.42);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.pre-box{margin-top:1.15rem;padding-top:1.15rem;border-top:1px solid var(--line)}
+.pre-box .pre-tag{display:block;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.pre-box b{display:block;font-family:var(--disp);font-weight:700;font-size:2rem;letter-spacing:-.02em;color:var(--wood3);line-height:1.1;margin:.25rem 0 .4rem}
+.pre-box .pre-sub{display:block;font-size:.78rem;color:var(--muted2);line-height:1.5}
+.pre{display:grid;grid-template-columns:.82fr 1.18fr;gap:clamp(22px,4vw,56px);align-items:start;background:#fff;border:1px solid var(--line2);border-radius:3px;padding:clamp(24px,3.6vw,48px);box-shadow:var(--sh)}
+.pre-num{font-family:var(--disp);font-weight:700;font-size:clamp(2.6rem,6vw,4rem);line-height:1;letter-spacing:-.03em;color:var(--ink)}
+.pre-num em{font-style:normal;color:var(--wood)}
+.pre-lab{margin-top:.85rem;font-size:.95rem;color:var(--muted2);line-height:1.55}
+.pre-nota{margin-top:1.15rem;font-size:.85rem;color:var(--muted2);border-left:2px solid var(--wood);padding-left:.95rem;line-height:1.6}
+.pre-lista{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.75rem 1.5rem}
+.pre-lista li{display:flex;gap:.6rem;font-size:.9rem;line-height:1.5}
+.pre-lista svg{width:15px;height:15px;flex:0 0 15px;color:var(--wood);margin-top:.28rem}
 /* ---------- comparativa ---------- */
 .tabla{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line2);
   border-radius:3px;overflow:hidden;font-size:.92rem}
@@ -298,6 +315,8 @@ footer{background:#0F1114;color:rgba(247,245,241,.68);padding:clamp(52px,6vw,76p
   .nav .btn{display:none}
   .cierre-grid{grid-template-columns:1fr !important}
   .cierre-grid .btns{justify-content:flex-start !important}
+  .pre{grid-template-columns:1fr}
+  .pre-lista{grid-template-columns:1fr}
   .stats{grid-template-columns:repeat(2,1fr)}
   .stats div:nth-child(2){border-right:0}
   .stats div:nth-child(1),.stats div:nth-child(2){border-bottom:1px solid var(--line-d2)}
@@ -342,6 +361,7 @@ footer{background:#0F1114;color:rgba(247,245,241,.68);padding:clamp(52px,6vw,76p
       <a href="#equipamiento">Equipamiento</a>
       <a href="#video">Vídeo</a>
       <a href="#galeria">Galería</a>
+      <a href="#precio">Precio</a>
       <a href="#faq">Preguntas</a>
     </nav>
     <a class="btn btn-wa" href="https://wa.me/34615691117?text=Hola%20Homes%20JN%2C%20me%20interesa%20la%20casa%20expandible%20de%2036%20m%C2%B2.%20%C2%BFPod%C3%A9is%20pasar%20presupuesto%3F" target="_blank" rel="noopener">
@@ -360,6 +380,7 @@ footer{background:#0F1114;color:rgba(247,245,241,.68);padding:clamp(52px,6vw,76p
   <a href="#equipamiento">Equipamiento</a>
   <a href="#video">Vídeo</a>
   <a href="#galeria">Galería</a>
+  <a href="#precio">Precio</a>
   <a href="#faq">Preguntas</a>
   <a href="#contacto">Contacto</a>
 </div>
@@ -374,10 +395,11 @@ footer{background:#0F1114;color:rgba(247,245,241,.68);padding:clamp(52px,6vw,76p
         <span class="badge"><i></i> Próximo lanzamiento · 36 m²</span>
         <h1>36 m² que se <em>expanden</em> en tu parcela</h1>
         <p>Casas prefabricadas expandibles con dos habitaciones, salón-cocina y baño completo. Estructura metálica, acabado exterior imitación madera y una instalación rápida, sin obra tradicional.</p>
+        <p class="hero-precio"><b>15.900 €</b><span>Vivienda de 36 m² · transporte y montaje aparte</span></p>
         <div class="btns">
-          <a class="btn btn-wa" href="https://wa.me/34615691117?text=Hola%20Homes%20JN%2C%20me%20interesa%20la%20casa%20expandible%20de%2036%20m%C2%B2.%20%C2%BFPod%C3%A9is%20pasar%20presupuesto%3F" target="_blank" rel="noopener">
+          <a class="btn btn-wa" href="https://wa.me/34615691117?text=Hola%20Homes%20JN%2C%20quiero%20presupuesto%20con%20transporte%20y%20montaje%20para%20la%20casa%20expandible%20de%2036%20m%C2%B2%20(15.900%20%E2%82%AC)" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.5s0-.4 0-.5-.7-1.6-.9-2.2-.4-.5-.6-.5h-.5a1 1 0 0 0-.7.3A2.9 2.9 0 0 0 6.2 8.7a5 5 0 0 0 1 2.7 11.4 11.4 0 0 0 4.4 3.9c1.6.6 2.3.7 3.1.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
-            Solicitar precio
+            Pedir presupuesto
           </a>
           <a class="btn btn-ghost" href="#video">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l6 3.5-6 3.5z"/></svg>
@@ -398,7 +420,11 @@ footer{background:#0F1114;color:rgba(247,245,241,.68);padding:clamp(52px,6vw,76p
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Estructura metálica</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Sistema expandible: más espacio útil</li>
         </ul>
-        <p class="foot">Precio <b>a consultar</b> según acabados y ubicación · <b>Transporte y montaje no incluidos</b></p>
+        <div class="pre-box">
+          <span class="pre-tag">Precio de la vivienda</span>
+          <b>15.900 €</b>
+          <span class="pre-sub">Transporte y montaje <b>no incluidos</b>: se presupuestan según la ubicación de la parcela</span>
+        </div>
       </aside>
     </div>
   </div>
@@ -718,6 +744,46 @@ footer{background:#0F1114;color:rgba(247,245,241,.68);padding:clamp(52px,6vw,76p
   </div>
 </section>
 
+<!-- ============ PRECIO ============ -->
+<section class="pad" id="precio">
+  <div class="wrap">
+    <div class="cabecera-sec rv">
+      <span class="eyebrow">Precio</span>
+      <h2>15.900 € la casa expandible de 36 m²</h2>
+      <p class="lead">Es el precio de la vivienda, no de una obra: la casa sale de taller terminada y en tu parcela solo se monta y se expande. El transporte y el montaje se presupuestan aparte, según dónde esté el terreno.</p>
+    </div>
+    <div class="pre rv">
+      <div>
+        <div class="pre-num">15.900 <em>€</em></div>
+        <p class="pre-lab">Vivienda expandible de 36 m² · <b>transporte y montaje no incluidos</b></p>
+        <p class="pre-nota">Dinos dónde quieres instalarla y te pasamos el precio del transporte y del montaje, sin compromiso.</p>
+        <div class="btns" style="margin-top:1.7rem">
+          <a class="btn btn-wa" href="https://wa.me/34615691117?text=Hola%20Homes%20JN%2C%20quiero%20presupuesto%20con%20transporte%20y%20montaje%20para%20la%20casa%20expandible%20de%2036%20m%C2%B2%20(15.900%20%E2%82%AC)" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.5s0-.4 0-.5-.7-1.6-.9-2.2-.4-.5-.6-.5h-.5a1 1 0 0 0-.7.3A2.9 2.9 0 0 0 6.2 8.7a5 5 0 0 0 1 2.7 11.4 11.4 0 0 0 4.4 3.9c1.6.6 2.3.7 3.1.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+            Presupuesto con transporte y montaje
+          </a>
+        </div>
+      </div>
+      <div>
+        <h3 style="margin-bottom:1.15rem">Qué incluyen los 15.900 €</h3>
+        <ul class="pre-lista">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 2 habitaciones y salón-cocina</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Baño completo</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Cocina equipada</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Ventanas y puerta con rotura de puente térmico</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Doble acristalamiento</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Exterior acabado imitación madera</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Estructura metálica</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Sistema expandible para ganar espacio útil</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Fabricación y montaje completo en taller</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 36 m² útiles con la casa expandida</li>
+        </ul>
+        <p class="pre-nota" style="margin-top:1.4rem">No incluye mobiliario (la casa se entrega sin amueblar), transporte ni montaje en la parcela.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ COMPARATIVA ============ -->
 <section class="pad">
   <div class="wrap">
@@ -761,6 +827,11 @@ footer{background:#0F1114;color:rgba(247,245,241,.68);padding:clamp(52px,6vw,76p
             <td>Traslado</td>
             <td><span class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Estructura metálica pensada para transportarse</span></td>
             <td>La casa queda donde se construye</td>
+          </tr>
+          <tr>
+            <td>Precio</td>
+            <td><span class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 15.900 € la vivienda de 36 m² (transporte y montaje aparte)</span></td>
+            <td>Presupuesto por partidas: la cifra final la marca el conjunto de la obra</td>
           </tr>
         </tbody>
       </table>
@@ -827,16 +898,16 @@ footer{background:#0F1114;color:rgba(247,245,241,.68);padding:clamp(52px,6vw,76p
     </div>
     <div class="faq rv">
       <details open>
+        <summary>¿Cuánto cuesta la casa?</summary>
+        <div class="res"><p>La vivienda expandible de 36 m² cuesta <strong>15.900 €</strong>. Es el precio de la casa terminada en taller; el <strong>transporte y el montaje no están incluidos</strong> y se presupuestan aparte según dónde esté tu parcela. Pídenos el presupuesto completo por WhatsApp y te lo detallamos sin compromiso.</p></div>
+      </details>
+      <details>
         <summary>¿Qué superficie tiene y cómo se distribuye?</summary>
         <div class="res"><p>36 m² útiles: dos habitaciones de 2,7 × 2,8 m, un baño completo de 1,6 × 2,8 m y un salón-cocina diáfano de 16,8 m² que cruza toda la casa. El plano de esta página es orientativo y la distribución final se ajusta con cada cliente.</p></div>
       </details>
       <details>
         <summary>¿El precio incluye el transporte y el montaje?</summary>
-        <div class="res"><p>No. El transporte y el montaje <strong>no están incluidos</strong> en el precio de la casa: se presupuestan aparte en función de dónde esté tu parcela. Dinos la ubicación y te pasamos el presupuesto completo, sin compromiso.</p></div>
-      </details>
-      <details>
-        <summary>¿Qué incluye la casa?</summary>
-        <div class="res"><p>Dos habitaciones, salón-cocina, baño completo y cocina equipada. Las ventanas y la puerta llevan rotura de puente térmico y doble acristalamiento, el exterior va con acabado imitación madera y la estructura es metálica, con sistema expandible para aumentar considerablemente el espacio útil.</p></div>
+        <div class="res"><p>No. Los <strong>15.900 €</strong> son el precio de la vivienda de 36 m². El transporte hasta tu parcela y el montaje se presupuestan aparte en función de la ubicación y del acceso. Dinos dónde es y te pasamos el presupuesto completo, sin compromiso.</p></div>
       </details>
       <details>
         <summary>¿Se entrega amueblada?</summary>
@@ -855,8 +926,8 @@ footer{background:#0F1114;color:rgba(247,245,241,.68);padding:clamp(52px,6vw,76p
         <div class="res"><p>Estamos en pleno lanzamiento. Escríbenos por WhatsApp y te contamos las opciones que hay ahora mismo para ver la unidad y sus acabados.</p></div>
       </details>
       <details>
-        <summary>¿Cuánto cuesta?</summary>
-        <div class="res"><p>Depende de los acabados y de la ubicación de la parcela, porque el transporte y el montaje se presupuestan aparte. Pide tu presupuesto por WhatsApp o por teléfono y te lo detallamos sin compromiso.</p></div>
+        <summary>¿Qué incluyen los 15.900 €?</summary>
+        <div class="res"><p>La vivienda completa de 36 m²: dos habitaciones, salón-cocina, baño completo y cocina equipada. Incluye las ventanas y la puerta con rotura de puente térmico y doble acristalamiento, el exterior con acabado imitación madera, la estructura metálica y el sistema expandible. No incluye mobiliario, transporte ni montaje.</p></div>
       </details>
     </div>
   </div>
@@ -869,7 +940,7 @@ footer{background:#0F1114;color:rgba(247,245,241,.68);padding:clamp(52px,6vw,76p
       <div class="rv">
         <span class="eyebrow">Contacto</span>
         <h2 style="color:var(--paper);margin:1.1rem 0 1.05rem">Pide tu presupuesto</h2>
-        <p class="lead" style="color:rgba(247,245,241,.7);margin-bottom:2rem">Dinos dónde quieres instalar tu casa expandible y te pasamos precio de la unidad y del transporte y montaje. Sin compromiso.</p>
+        <p class="lead" style="color:rgba(247,245,241,.7);margin-bottom:2rem">Dinos dónde quieres instalar tu casa expandible y te pasamos el presupuesto completo: los <b style="color:var(--wood2)">15.900 €</b> de la vivienda más el transporte y el montaje. Sin compromiso.</p>
         <ul class="datos">
           <li>
             <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1.2 1A17 17 0 0 1 4 5.2 1 1 0 0 1 5 4z"/></svg></span>
@@ -914,8 +985,8 @@ footer{background:#0F1114;color:rgba(247,245,241,.68);padding:clamp(52px,6vw,76p
   <div class="wrap" style="padding:clamp(52px,7vw,90px) 0">
     <div style="display:grid;grid-template-columns:1.35fr .65fr;gap:2rem;align-items:center" class="cierre-grid">
       <div>
-        <h2>Próximo lanzamiento de las casas expandibles de 36 m²</h2>
-        <p class="lead" style="margin-top:.9rem;max-width:640px">Primera producción en marcha. Reserva tu presupuesto ahora y elige acabados y ubicación con nosotros.</p>
+        <h2>Casas expandibles de 36 m² por 15.900 €</h2>
+        <p class="lead" style="margin-top:.9rem;max-width:640px">Primera producción en marcha. Escríbenos con la ubicación de tu parcela y te pasamos el presupuesto completo: la vivienda, el transporte y el montaje.</p>
       </div>
       <div class="btns" style="justify-content:flex-end">
         <a class="btn btn-ink" href="https://wa.me/34615691117?text=Hola%20Homes%20JN%2C%20quiero%20presupuesto%20para%20la%20casa%20expandible%20de%2036%20m%C2%B2" target="_blank" rel="noopener">Pedir presupuesto</a>
@@ -1029,6 +1100,7 @@ document.getElementById('formWa').addEventListener('submit', function(ev){
   "offers": {
     "@type": "Offer",
     "availability": "https://schema.org/PreOrder",
+    "price": "15900",
     "priceCurrency": "EUR",
     "url": "https://neolabs-clientes.github.io/homes-jn/#contacto",
     "seller": {
